@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PANCASILA</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif; /* Menggunakan font serif agar mirip dengan gambar */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            width: 90%;
+            max-width: 900px;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .row.right {
+            justify-content: flex-end;
+        }
+
+        .image-box {
+            width: 140px;
+            height: 140px;
+            border: 3px solid gray; /* Border abu-abu untuk sila 1, 3, dan 5 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            padding: 10px;
+            box-sizing: border-box; /* Agar padding tidak menambah ukuran keseluruhan box */
+        }
+
+        .image-box img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain; /* Memastikan gambar tidak terpotong */
+        }
+
+
+        .text {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #000;
+        }
+        
+        .text-right {
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>PANCASILA</h1>
+
+    <div class="container">
+        <!-- Sila 1 -->
+        <div class="row">
+            <div class="image-box">
+                <!-- URL Bintang -->
+                <img src="sila1.png" alt="Bintang Sila 1">
+            </div>
+            <div class="text">Ketuhanan Yang Maha Esa</div>
+        </div>
+
+        <!-- Sila 2 -->
+        <div class="row right">
+            <div class="text">Kemanusiaan Yang Adil dan Beradab</div>
+            <div class="image-box bg-red">
+                 <!-- URL Rantai -->
+                 <img src="sila2.png" alt="Rantai Sila 2">
+            </div>
+        </div>
+
+        <!-- Sila 3 -->
+        <div class="row">
+            <div class="image-box">
+                <!-- URL Pohon Beringin -->
+                <img src="sila3.png" alt="Pohon Beringin Sila 3">
+            </div>
+            <div class="text">Persatuan Indonesia</div>
+        </div>
+
+        <!-- Sila 4 -->
+        <div class="row right">
+            <div class="text text-right">Kerakyatan yang dipimpin oleh hikmat kebijaksanaan<br>dalam permusyawaratan perwakilan</div>
+            <div class="image-box bg-red">
+                 <!-- URL Kepala Banteng -->
+                 <img src="sila4.png" alt="Kepala Banteng Sila 4">
+            </div>
+        </div>
+
+        <!-- Sila 5 -->
+        <div class="row">
+            <div class="image-box">
+                <!-- URL Padi dan Kapas -->
+                <img src="sila5.png" alt="Padi dan Kapas Sila 5">
+            </div>
+            <div class="text">Keadilan sosial bagi seluruh rakyat Indonesia</div>
+        </div>
+    </div>
+
+</body>
+</html>

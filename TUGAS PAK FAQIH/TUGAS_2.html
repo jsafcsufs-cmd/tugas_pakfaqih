@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Kue Maryam</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif; /* Menggunakan font serif mirip di gambar */
+            margin: 40px;
+            color: #000;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+        }
+
+        /* Container untuk bagian bahan-bahan dan gambar utamanya */
+        .bahan-container {
+            display: flex;
+            justify-content: space-between; /* Teks di kiri, gambar di kanan */
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .bahan-teks {
+            flex: 1; /* Mengambil sisa ruang */
+        }
+
+        .bahan-teks h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .bahan-teks ul {
+            margin-top: 0;
+            padding-left: 20px;
+            font-size: 0.95em;
+            line-height: 1.4;
+        }
+
+        .gambar-utama {
+            width: 250px;
+            height: auto;
+            margin-left: 20px;
+            border: 1px solid #ccc; /* Sedikit border jika gambar tidak ada */
+        }
+
+        /* Garis pemisah yang tipis */
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        .langkah-langkah h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .langkah-list {
+            padding-left: 20px;
+            font-size: 0.95em;
+        }
+
+        .langkah-item {
+            margin-bottom: 20px;
+        }
+
+        .langkah-teks {
+            margin-bottom: 5px;
+        }
+
+        /* Styling untuk gambar di setiap langkah */
+        .gambar-langkah {
+            display: block; /* Membuat gambar berada di baris baru */
+            width: 150px; /* Atur ukuran gambar langkah */
+            height: auto;
+            border: 1px solid #ddd;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Resep Kue Maryam</h1>
+
+    <div class="bahan-container">
+        <div class="bahan-teks">
+            <h3>Bahan-bahan:</h3>
+            <ul>
+                <li>250 gr tepung terigu</li>
+                <li>1 butir telur</li>
+                <li>3 sdm margarin, lelehkan</li>
+                <li>100 ml air hangat</li>
+                <li>2 sdm susu bubuk (optional)</li>
+                <li>1/2 sdt garam</li>
+                <li>margarin leleh untuk olesan</li>
+                <li>minyak untuk merendam</li>
+            </ul>
+        </div>
+        
+        <!-- Ganti src ini dengan path gambar kue maryam Anda -->
+        <img src="rotimaryam.png" alt="Kue Maryam" class="gambar-utama">
+    </div>
+
+    <hr>
+
+    <div class="langkah-langkah">
+        <h3>Langkah-langkah</h3>
+        <ol class="langkah-list">
+            <li class="langkah-item">
+                <div class="langkah-teks">Campur semua bahan roti jadi satu</div>
+                <!-- Ganti src ini dengan gambar langkah 1 -->
+                <img src="adonan.png" alt="Langkah 1" class="gambar-langkah">
+            </li>
+            <li class="langkah-item">
+                <div class="langkah-teks">Uleni sampai kalis (aku pake tangan) jangan takut jika adonan lengket ya, lumuri tangan sesekali dg tepung (tapi jangan menambahkan tepung) uleni terus sampai adonan kalis.</div>
+                <!-- Ganti src ini dengan gambar langkah 2 -->
+                <img src="adonan2.png" alt="Langkah 2" class="gambar-langkah">
+            </li>
+            <li class="langkah-item">
+                <div class="langkah-teks">Kalisnya adonan canai tidak sekalis adonan roti ya, kira2 seperti ini sudah cukup.</div>
+                <!-- Ganti src ini dengan gambar langkah 3 -->
+                <img src="adonan3.png" alt="Langkah 3" class="gambar-langkah">
+            </li>
+        </ol>
+    </div>
+
+</body>
+</html>
